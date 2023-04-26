@@ -1,0 +1,16 @@
+{
+  "name": "webhuerta",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "deploy":"gh-pages -d ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "gh-pages": "^5.0.0"
+  },
+  "homepage":"https://github.com/onurbsofa/Huerta-NES.git"
+}
