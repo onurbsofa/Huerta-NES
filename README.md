@@ -1,3 +1,3 @@
 <h1>Huerta NES Web<h1>
- <h2>Descripción<h2>
+Descripción
 Landig Page para proyecto educativo de la comunidad Nueva Escuela del Sur
