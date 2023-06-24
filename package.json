@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "deploy":"gh-pages -d."
+    "deploy": "gh-pages -d."
   },
   "keywords": [],
   "author": "",
@@ -12,5 +12,5 @@
   "dependencies": {
     "gh-pages": "^5.0.0"
   },
-  "homepage":"https://github.com/onurbsofa/Huerta-NES.git"
+  "homepage": "https://github.com/onurbsofa/Huerta-NES.git"
 }
