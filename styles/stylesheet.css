@@ -73,6 +73,11 @@ ul{
   bottom: 0;
 }
 
+.contenido p{
+  color: black;
+  font-size: 20px;
+}
+
 .showcase .contenido h2,p {
     font-size: 50px;
     margin-bottom: 10px;
@@ -151,16 +156,30 @@ ul{
   
   .cards-banner-one .content {
     width: 40%;
-    padding: 90px 0 0 30px;
+    padding: 30px 0 0 30px;
     color: #fff;
     background-color: aliceblue;
     opacity: 0.7;
     height: 100%;
   }
 
+  .content{
+    width: 100%;
+    height: 100%;
+    background-color: aliceblue;
+    opacity: 0.7;
+
+  }
+
   .content h2 {
     font-size: 40px;
     margin-bottom: 10px;
+    color: black;
+  }
+
+  .content p {
+    font-size: 20px;
+    margin-bottom: 20px;
     color: black;
   }
   
