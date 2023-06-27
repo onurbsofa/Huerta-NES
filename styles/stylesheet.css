@@ -55,12 +55,10 @@ ul{
     background-image: url('../img/baner1.JPG') ;
     background-size: cover;
     background-position: center;
-    padding-bottom: 50px ;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-end;
-    padding-bottom: 50px;
     margin-bottom: 20px;
     text-align: center;
 }
@@ -75,14 +73,13 @@ ul{
 
 .contenido p{
   color: black;
-  font-size: 20px;
+  font-size: 25px;
 }
 
-.showcase .contenido h2,p {
-    font-size: 50px;
+.showcase .contenido h2  {
+    font-size: 25px;
     margin-bottom: 10px;
     color: black;
-    font-size: 25px;
 }
 
 .btn{
@@ -163,13 +160,6 @@ ul{
     height: 100%;
   }
 
-  .content{
-    width: 100%;
-    height: 100%;
-    background-color: aliceblue;
-    opacity: 0.7;
-
-  }
 
   .content h2 {
     font-size: 40px;
@@ -178,7 +168,7 @@ ul{
   }
 
   .content p {
-    font-size: 20px;
+    font-size: 17px;
     margin-bottom: 20px;
     color: black;
   }
@@ -265,7 +255,7 @@ ul{
     .cards-banner-two .content {
       width: 80%;
     }
-  
+
   }
   
   @media (max-width: 500px) {
