@@ -2,83 +2,161 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Bruno Fazio - Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
     <link rel="stylesheet" href="styles/stylesheet.css">
-    <!-- fontawsome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- google fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500&display=swap" rel="stylesheet">
-    <!-- favicon -->
     <link rel="icon" type="image/x-icon" href="img/perfil.png">
 </head>
 <body>
+    <img class="wave-bg" src="img/banner3.png" alt="Wave Background">
 
-    <div class="menu-btn">
-        <i class="fas fa-bars fa-2x"></i>
-    </div>
-
-    <div class="conteiner">
-        <nav class="nav-main">
-            <img class="nav-brand" src="img/NES.png" alt="logo nes">
-            <ul class="nav-menu">
-                <li>
-                   <a href="#"> Home</a>
-                </li>
-                <li>
-                   <a href="#">Proyectos</a> 
-                </li>
-                <li>
-                   <a href="#">Sobre Nosotros</a> 
-                </li>
+    <div class="container">
+        <nav>
+            <div class="logo">BF</div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
-            <ul class="nav-menu-right">
-                <li>
-                    <a href="#">
-                        <i class="fas fa-search"></i>
-                    </a>
-                </li>
-            </ul>
-        </nav>
-        <hr>
-
-        <!-- showcase -->
-        <header class="showcase">
-            <h2>My Personal Portfolio</h2>
-            <p>Welcome to my portfolio. Here are some of my projects:</p>
-            <div class="portfolio-links">
-                <a href="https://example1.com" class="btn">Project 1</a>
-                <a href="https://example2.com" class="btn">Project 2</a>
-                <a href="https://example3.com" class="btn">Project 3</a>
+            <div class="menu-btn" id="menuBtn">
+                <i class="fas fa-bars"></i>
             </div>
-        </header>
+        </nav>
 
-         <!-- Portfolio Screenshot -->
-        <div class="portfolio-screenshot">
-            <img src="img/banner3.png" alt="Portfolio Screenshot" />
-            <img src="img/perfil.png" alt="Profile" />
-        </div>
-     <!-- Contact -->
-     <section class="social">
-        <p>Contact Me</p>
-        <div class="links">
-          <a href="https://github.com">
-            <i class="fab fa-github"></i>
-          </a>
-          <a href="https://linkedin.com">
-            <i class="fab fa-linkedin"></i>
-          </a>
-          <a href="mailto:example@email.com">
-            <i class="fas fa-envelope"></i>
-          </a>
-        </div>
-      </section>
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <h1>Bruno Fazio</h1>
+                <p class="subtitle">Full Stack Developer | Software Engineer</p>
+                <p>Passionate about creating elegant solutions to complex problems. Specialized in web development, with expertise in modern frameworks and technologies.</p>
+                <div class="cta-buttons">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about" id="about">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>I'm a dedicated software developer with a passion for building innovative web applications. My journey in tech has equipped me with a diverse skill set and a problem-solving mindset.</p>
+                    <p>I thrive on challenges and continuously seek to expand my knowledge in emerging technologies. Whether it's front-end design or back-end architecture, I bring creativity and precision to every project.</p>
+                </div>
+                <div class="skills">
+                    <div class="skill-item">
+                        <i class="fas fa-code"></i> Web Development
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-database"></i> Database Design
+                    </div>
+                    <div class="skill-item">
+                        <i class="fab fa-react"></i> React & JavaScript
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-server"></i> Backend Development
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-mobile-alt"></i> Responsive Design
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-git-alt"></i> Version Control
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="projects" id="projects">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Project One</h3>
+                        <p>A comprehensive web application built with modern technologies. Features include real-time updates, responsive design, and intuitive user interface.</p>
+                        <div class="project-tags">
+                            <span class="tag">React</span>
+                            <span class="tag">Node.js</span>
+                            <span class="tag">MongoDB</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#"><i class="fab fa-github"></i> Code</a>
+                            <a href="#"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Project Two</h3>
+                        <p>Mobile-first responsive application designed for optimal user experience across all devices. Implements modern UI/UX principles.</p>
+                        <div class="project-tags">
+                            <span class="tag">HTML5</span>
+                            <span class="tag">CSS3</span>
+                            <span class="tag">JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#"><i class="fab fa-github"></i> Code</a>
+                            <a href="#"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Project Three</h3>
+                        <p>Data visualization dashboard with interactive charts and real-time analytics. Built for performance and scalability.</p>
+                        <div class="project-tags">
+                            <span class="tag">Vue.js</span>
+                            <span class="tag">D3.js</span>
+                            <span class="tag">API</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#"><i class="fab fa-github"></i> Code</a>
+                            <a href="#"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact" id="contact">
+            <h2 class="section-title">Let's Connect</h2>
+            <p style="font-size: 18px; color: #d0d0d0; max-width: 600px; margin: 0 auto;">I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.</p>
+            <div class="social-links">
+                <a href="https://github.com" target="_blank" title="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://linkedin.com/in/bruno-fazio-7576b3274/" target="_blank" title="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="mailto:your.email@example.com" title="Email">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                <a href="https://twitter.com" target="_blank" title="Twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </div>
+        </section>
     </div>
-    </div>
-    <footer></footer>
-  <!-- Scroll Reveal -->
-  <script src="https://unpkg.com/scrollreveal"></script>
-  <script src="js/main.js"></script>
+
+    <footer>
+        <p>&copy; 2024 Bruno Fazio. All rights reserved.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
 </body>
 </html>
