@@ -266,5 +266,44 @@ document.addEventListener('keydown', (e) => {
     }
 });
 
-// Start game on page load
-startGame();
+// Mobile controls
+document.getElementById('start-btn').addEventListener('click', () => {
+    if (!gameRunning) {
+        startGame();
+    }
+});
+
+document.getElementById('left-btn').addEventListener('touchstart', (e) => {
+    e.preventDefault();
+    if (gameRunning && currentPiece) currentPiece.move(-1, 0);
+});
+
+document.getElementById('right-btn').addEventListener('touchstart', (e) => {
+    e.preventDefault();
+    if (gameRunning && currentPiece) currentPiece.move(1, 0);
+});
+
+document.getElementById('down-btn').addEventListener('touchstart', (e) => {
+    e.preventDefault();
+    if (gameRunning && currentPiece) currentPiece.move(0, 1);
+});
+
+document.getElementById('rotate-btn').addEventListener('touchstart', (e) => {
+    e.preventDefault();
+    if (gameRunning && currentPiece) currentPiece.rotate();
+});
+
+document.getElementById('drop-btn').addEventListener('touchstart', (e) => {
+    e.preventDefault();
+    if (gameRunning && currentPiece) currentPiece.drop();
+});
+
+// Initialize game state but don't start
+board = Array.from({length: ROWS}, () => Array(COLS).fill(0));
+score = 0;
+level = 1;
+lines = 0;
+dropTime = 1000;
+gameRunning = false;
+updateUI();
+draw();
