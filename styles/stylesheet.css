@@ -421,3 +421,59 @@ footer {
         font-size: 20px;
     }
 }
+
+/* Tetris Section */
+.tetris {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.tetris-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+#tetris-canvas {
+    border: 2px solid #9fc131;
+    background: #000;
+    border-radius: 10px;
+}
+
+.tetris-info {
+    background: rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    border-radius: 15px;
+    border: 1px solid rgba(159, 193, 49, 0.2);
+    min-width: 200px;
+}
+
+.tetris-info div {
+    margin-bottom: 15px;
+    font-size: 18px;
+    color: #d0d0d0;
+}
+
+.tetris-info .controls {
+    text-align: left;
+}
+
+.tetris-info .controls p {
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+@media (max-width: 768px) {
+    .tetris-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #tetris-canvas {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+    }
+}
